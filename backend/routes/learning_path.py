@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from backend.services.ai_service import generate_learning_roadmap
-from backend.services.resource_service import fetch_resources_for_query
+from services.ai_service import generate_learning_roadmap
+from services.resource_service import fetch_resources_for_query
 
 router = APIRouter(tags=["generation"])
 

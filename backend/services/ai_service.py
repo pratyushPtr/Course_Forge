@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Extract your Azure credentials from the runtime environment
-api_key = os.getenv("AZURE_OPENAI_KEY", "")
+api_key = os.getenv("AZURE_OPENAI_API_KEY", "")
 endpoint = os.getenv("AZURE_OPENAI_ENDPOINT", "")
-deployment_name = os.getenv("AZURE_DEPLOYMENT_NAME", "")
+deployment_name = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME", "")
 api_version = os.getenv("AZURE_OPENAI_API_VERSION", "2024-05-01-preview")
 
 # Initialize the dedicated Azure OpenAI client wrapper

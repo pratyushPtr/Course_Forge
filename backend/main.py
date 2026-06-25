@@ -3,7 +3,7 @@ from fastapi import FastAPI
 # Import the CORS middleware to allow cross-origin requests from your frontend browser window.
 from fastapi.middleware.cors import CORSMiddleware
 # Import the modular router from your routes directory to attach it here.
-from backend.routes.learning_path import router as learning_path_router
+from routes.learning_path import router as learning_path_router
 
 # Instantiate your global FastAPI application app, which coordinates configuration and middleware.
 app = FastAPI(title="Course Forge Backend API", version="1.0")
