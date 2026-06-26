@@ -13,10 +13,7 @@ app = FastAPI(title="Course Forge Backend API", version="1.0")
 # =========================================================================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",  # React default Vite local development port
-        "http://127.0.0.1:5173",  # Alternate local loopback address
-    ],
+    allow_origins=["*"],  # Allows both localhost and your new Azure frontend cloud URL
     allow_credentials=True,
     allow_methods=["*"],          # Allows all HTTP methods (POST, GET, OPTIONS, etc.)
     allow_headers=["*"],          # Allows all incoming headers (Content-Type, Authorization, etc.)
