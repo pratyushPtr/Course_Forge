@@ -15,7 +15,7 @@ import {
   Video // NEW: Imported Video icon to distinguish live YouTube streaming items
 } from 'lucide-react';
 
-const BACKEND_URL = 'http://127.0.0.1:8000';
+const BACKEND_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
 
 export default function App() {
   // Input Form States

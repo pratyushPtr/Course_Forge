@@ -3,3 +3,11 @@ node_modules/
 __pycache__/
 .DS_Store
 .env
+venv/
+backend/venv/
+frontend/.env.production
+frontend/.env.local
+__pycache__/
+*.pyc
+frontend/dist/
+
